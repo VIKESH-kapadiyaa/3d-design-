@@ -124,3 +124,56 @@ body {
 .spin-slow-ccw { animation: spin-ccw 22s linear infinite; transform-origin: 0 0; will-change: transform; }
 .spin-slow-cw { animation: spin-cw 35s linear infinite; transform-origin: 0 0; will-change: transform; }
 .core-pulse { animation: pulse-scale 3s ease-in-out infinite; transform-origin: 0 0; will-change: transform; opacity: 1; }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #orbit-group {
+        /* Scale is handled in JS now to allow interaction */
+        margin-top: -600px;
+        margin-left: -600px;
+    }
+
+    #chart-wrapper {
+        height: 70vh;
+    }
+
+    .legend-title {
+        height: 60px;
+        font-size: 8px;
+    }
+
+    #tooltip {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    /* Hide some less critical UI on mobile to avoid clutter */
+    .absolute.top-6.left-10 {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        pointer-events: none;
+    }
+    
+    .absolute.top-6.left-10 > div {
+        display: none; /* Hide instruction bubbles on mobile */
+    }
+
+    .absolute.top-6.left-10 > button {
+        display: flex;
+        pointer-events: auto;
+        margin: 0 auto;
+    }
+}
+
+/* Fix for legend horizontal scroll on mobile */
+#legend-container::-webkit-scrollbar {
+    height: 4px;
+}
+#legend-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+#legend-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}

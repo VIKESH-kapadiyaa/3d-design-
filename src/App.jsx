@@ -37,8 +37,10 @@ function App() {
     // --- 2. SUPER SMOOTH 3D ORBITAL CAMERA ---
     let currentRotX = 55;
     let currentRotZ = 0;
-    let currentZoomScale = 0.75;
-    let targetZoomScale = 0.75;
+    const isMobile = window.innerWidth <= 768;
+    const initialZoom = isMobile ? 0.35 : 0.75;
+    let currentZoomScale = initialZoom;
+    let targetZoomScale = initialZoom;
 
     let velX = 0;
     let velZ = 0;
@@ -98,6 +100,13 @@ function App() {
         lastX = e.clientX; lastY = e.clientY;
         velX = 0; velZ = 0; 
     });
+
+    wrapperElem.addEventListener("touchstart", (e) => {
+        isDragging = true; autoRotate = false;
+        lastX = e.touches[0].clientX; lastY = e.touches[0].clientY;
+        velX = 0; velZ = 0; 
+    }, { passive: false });
+
     window.addEventListener("mousemove", (e) => {
         if (!isDragging) return;
         const dx = e.clientX - lastX;
@@ -108,8 +117,25 @@ function App() {
         velZ += dx * sensitivity * (isUpsideDown ? -1 : 1);
         velX -= dy * sensitivity; 
     });
-    window.addEventListener("mouseup", () => { isDragging = false; });
-    wrapperElem.addEventListener("mouseleave", () => { isDragging = false; });
+
+    window.addEventListener("touchmove", (e) => {
+        if (!isDragging) return;
+        const dx = e.touches[0].clientX - lastX;
+        const dy = e.touches[0].clientY - lastY;
+        lastX = e.touches[0].clientX; lastY = e.touches[0].clientY;
+
+        const isUpsideDown = Math.cos(currentRotX * Math.PI / 180) < 0;
+        velZ += dx * sensitivity * (isUpsideDown ? -1 : 1);
+        velX -= dy * sensitivity; 
+        
+        // Prevent scrolling while interacting with the 3D space
+        if (e.cancelable) e.preventDefault();
+    }, { passive: false });
+
+    const handleRelease = () => { isDragging = false; };
+    window.addEventListener("mouseup", handleRelease);
+    window.addEventListener("touchend", handleRelease);
+    wrapperElem.addEventListener("mouseleave", handleRelease);
     
     const btnReset = document.getElementById("reset-view");
     if(btnReset) {
@@ -118,7 +144,7 @@ function App() {
           isDragging = false;
           velX = 0; velZ = 0; 
           currentRotX = 0; currentRotZ = 0; 
-          targetZoomScale = 0.85; currentZoomScale = 0.85; 
+          targetZoomScale = initialZoom; currentZoomScale = initialZoom; 
           orbitNode.style.transition = 'transform 0.8s cubic-bezier(0.2, 1, 0.3, 1)';
           updateTransform();
           setTimeout(() => { orbitNode.style.transition = 'none'; }, 800);
@@ -429,11 +455,11 @@ function App() {
           </button>
         </div>
       </div>
-      <div className="w-full max-w-[1400px] mx-auto px-10 pb-12 flex flex-col lg:flex-row justify-between items-end gap-10">
-        <div className="max-w-xl z-10 relative"></div>
-        <div className="flex flex-col items-end z-10 relative pointer-events-none">
-          <div id="legend-container" className="flex items-end gap-[2px] mb-2 pointer-events-auto"></div>
-          <p className="text-[11px] text-gray-400 tracking-wide">[Monthly Color Index & Top Grossing Movie]</p>
+      <div className="w-full max-w-[1400px] mx-auto px-4 md:px-10 pb-12 flex flex-col lg:flex-row justify-between items-center lg:items-end gap-10">
+        <div className="max-w-xl z-10 relative hidden lg:block"></div>
+        <div className="flex flex-col items-center lg:items-end z-10 relative pointer-events-none w-full">
+          <div id="legend-container" className="flex items-end gap-[2px] mb-2 pointer-events-auto overflow-x-auto max-w-full pb-4"></div>
+          <p className="text-[10px] md:text-[11px] text-gray-400 tracking-wide text-center lg:text-right">[Monthly Color Index & Top Grossing Movie]</p>
         </div>
       </div>
     </div>
