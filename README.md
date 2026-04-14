@@ -1,16 +1,58 @@
-# React + Vite
+# 🌌 3D Radial Data Visualization Engine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-fidelity, interactive 3D visualization system built with **React** and **D3.js**. This project transforms complex hierarchical datasets into an immersive, multi-layered radial experience, optimized for both high-end desktops and mobile devices.
 
-Currently, two official plugins are available:
+## 🚀 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*   **🎮 Immersive 3D Navigation**: Full 360-degree orbital rotation with smooth inertia-based movements. Support for scroll-to-zoom and mobile pinch gestures.
+*   **📊 Multi-Dimensional D3.js Rendering**: Uses a layered SVG architecture to achieve genuine Z-depth, featuring glowing apex nodes, radial baseline labels, and animated connection chords.
+*   **🧩 Intelligent Data Pipeline**: A robust sanitization engine that handles various JSON schemas. It automatically extracts categories, parses dates, and normalizes values with dataset-relative scaling.
+*   **📱 Mobile-First Optimization**: Custom touch interaction logic that differentiates between chart manipulation and page scrolling, paired with responsive zoom framing for various screen aspect ratios.
+*   **🔄 Persistent User State**: Built-in `localStorage` integration ensures that user-uploaded datasets persist across browser refreshes.
+*   **⚡ Performance Balanced**: Implements GPU-accelerated CSS transforms and automated transition guards for large datasets (>80 items) to maintain a fluid 60FPS experience.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Frontend**: React (Hooks, Functional Components)
+*   **Visualization**: D3.js (Advanced joins, force-simulated curves, radial scales)
+*   **Styling**: Tailwind CSS & Vanilla CSS (Neo-brutalist / Dark-mode aesthetic)
+*   **Build Tool**: Vite (Ultra-fast HMR)
+*   **Interactions**: Custom Pointer & Touch event management for 3D state
 
-## Expanding the ESLint configuration
+## 🚦 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+*   Node.js (v18+)
+*   npm or yarn
+
+### Installation
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+## 📂 Data Format
+The engine accepts any JSON array. It is flexible and automatically detects common aliases:
+```json
+[
+  {
+    "date": "2025-01-01",
+    "category": "Sales",
+    "value": 450
+  }
+]
+```
+*Aliases supported:*
+*   `category` → `genre` → `type`
+*   `date` → `month`
+
+## 🎨 Design Philosophy
+The UI follows a modern **Glassmorphism** aesthetic, utilizing high-contrast HSL color palettes and SVG filters to create a premium "dashboard" feel. Every interaction is designed to be tactile—from the pulsing central core to the "Snap-to-2D" image reset.
+
+---
+*Created as part of a high-fidelity data visualization*
