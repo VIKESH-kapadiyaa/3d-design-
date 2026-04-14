@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Avatar",
+    "value": 2847,
+    "year": "2009",
+    "month": "12",
+    "monthIdx": 11,
+    "genre": "Sci-Fi"
+  },
+  {
+    "name": "Avengers: Endgame",
+    "value": 2797,
+    "year": "2019",
+    "month": "4",
+    "monthIdx": 3,
+    "genre": "Action"
+  },
+  {
+    "name": "Titanic",
+    "value": 2201,
+    "year": "1997",
+    "month": "12",
+    "monthIdx": 11,
+    "genre": "Romance"
+  }
+]

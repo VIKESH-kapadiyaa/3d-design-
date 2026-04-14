@@ -1,0 +1,602 @@
+[
+  {
+    "date": "2025-01-01",
+    "category": "Marketing",
+    "value": 224,
+    "region": "West"
+  },
+  {
+    "date": "2025-01-02",
+    "category": "Development",
+    "value": 213,
+    "region": "North"
+  },
+  {
+    "date": "2025-01-03",
+    "category": "Sales",
+    "value": 199,
+    "region": "South"
+  },
+  {
+    "date": "2025-01-04",
+    "category": "Support",
+    "value": 483,
+    "region": "South"
+  },
+  {
+    "date": "2025-01-05",
+    "category": "Sales",
+    "value": 52,
+    "region": "South"
+  },
+  {
+    "date": "2025-01-06",
+    "category": "Marketing",
+    "value": 130,
+    "region": "South"
+  },
+  {
+    "date": "2025-01-07",
+    "category": "Development",
+    "value": 229,
+    "region": "East"
+  },
+  {
+    "date": "2025-01-08",
+    "category": "Development",
+    "value": 480,
+    "region": "North"
+  },
+  {
+    "date": "2025-01-09",
+    "category": "Support",
+    "value": 147,
+    "region": "South"
+  },
+  {
+    "date": "2025-01-10",
+    "category": "Support",
+    "value": 472,
+    "region": "West"
+  },
+  {
+    "date": "2025-01-11",
+    "category": "Support",
+    "value": 331,
+    "region": "West"
+  },
+  {
+    "date": "2025-01-12",
+    "category": "Development",
+    "value": 139,
+    "region": "West"
+  },
+  {
+    "date": "2025-01-13",
+    "category": "Sales",
+    "value": 111,
+    "region": "East"
+  },
+  {
+    "date": "2025-01-14",
+    "category": "Marketing",
+    "value": 188,
+    "region": "North"
+  },
+  {
+    "date": "2025-01-15",
+    "category": "Support",
+    "value": 201,
+    "region": "West"
+  },
+  {
+    "date": "2025-01-16",
+    "category": "Sales",
+    "value": 166,
+    "region": "West"
+  },
+  {
+    "date": "2025-01-17",
+    "category": "Marketing",
+    "value": 110,
+    "region": "South"
+  },
+  {
+    "date": "2025-01-18",
+    "category": "Support",
+    "value": 283,
+    "region": "West"
+  },
+  {
+    "date": "2025-01-19",
+    "category": "Sales",
+    "value": 182,
+    "region": "East"
+  },
+  {
+    "date": "2025-01-20",
+    "category": "Marketing",
+    "value": 271,
+    "region": "South"
+  },
+  {
+    "date": "2025-01-21",
+    "category": "Marketing",
+    "value": 50,
+    "region": "North"
+  },
+  {
+    "date": "2025-01-22",
+    "category": "Marketing",
+    "value": 267,
+    "region": "North"
+  },
+  {
+    "date": "2025-01-23",
+    "category": "Development",
+    "value": 242,
+    "region": "East"
+  },
+  {
+    "date": "2025-01-24",
+    "category": "Development",
+    "value": 493,
+    "region": "West"
+  },
+  {
+    "date": "2025-01-25",
+    "category": "Development",
+    "value": 229,
+    "region": "West"
+  },
+  {
+    "date": "2025-01-26",
+    "category": "Marketing",
+    "value": 265,
+    "region": "West"
+  },
+  {
+    "date": "2025-01-27",
+    "category": "Support",
+    "value": 394,
+    "region": "North"
+  },
+  {
+    "date": "2025-01-28",
+    "category": "Sales",
+    "value": 401,
+    "region": "South"
+  },
+  {
+    "date": "2025-01-29",
+    "category": "Development",
+    "value": 216,
+    "region": "South"
+  },
+  {
+    "date": "2025-01-30",
+    "category": "Marketing",
+    "value": 222,
+    "region": "East"
+  },
+  {
+    "date": "2025-01-31",
+    "category": "Marketing",
+    "value": 91,
+    "region": "East"
+  },
+  {
+    "date": "2025-02-01",
+    "category": "Sales",
+    "value": 361,
+    "region": "West"
+  },
+  {
+    "date": "2025-02-02",
+    "category": "Sales",
+    "value": 222,
+    "region": "West"
+  },
+  {
+    "date": "2025-02-03",
+    "category": "Sales",
+    "value": 174,
+    "region": "South"
+  },
+  {
+    "date": "2025-02-04",
+    "category": "Sales",
+    "value": 365,
+    "region": "North"
+  },
+  {
+    "date": "2025-02-05",
+    "category": "Marketing",
+    "value": 451,
+    "region": "West"
+  },
+  {
+    "date": "2025-02-06",
+    "category": "Development",
+    "value": 357,
+    "region": "East"
+  },
+  {
+    "date": "2025-02-07",
+    "category": "Sales",
+    "value": 453,
+    "region": "North"
+  },
+  {
+    "date": "2025-02-08",
+    "category": "Development",
+    "value": 308,
+    "region": "South"
+  },
+  {
+    "date": "2025-02-09",
+    "category": "Development",
+    "value": 296,
+    "region": "South"
+  },
+  {
+    "date": "2025-02-10",
+    "category": "Development",
+    "value": 101,
+    "region": "East"
+  },
+  {
+    "date": "2025-02-11",
+    "category": "Development",
+    "value": 406,
+    "region": "North"
+  },
+  {
+    "date": "2025-02-12",
+    "category": "Support",
+    "value": 292,
+    "region": "East"
+  },
+  {
+    "date": "2025-02-13",
+    "category": "Development",
+    "value": 263,
+    "region": "West"
+  },
+  {
+    "date": "2025-02-14",
+    "category": "Sales",
+    "value": 83,
+    "region": "North"
+  },
+  {
+    "date": "2025-02-15",
+    "category": "Marketing",
+    "value": 383,
+    "region": "North"
+  },
+  {
+    "date": "2025-02-16",
+    "category": "Sales",
+    "value": 440,
+    "region": "West"
+  },
+  {
+    "date": "2025-02-17",
+    "category": "Marketing",
+    "value": 414,
+    "region": "North"
+  },
+  {
+    "date": "2025-02-18",
+    "category": "Support",
+    "value": 72,
+    "region": "East"
+  },
+  {
+    "date": "2025-02-19",
+    "category": "Support",
+    "value": 298,
+    "region": "East"
+  },
+  {
+    "date": "2025-02-20",
+    "category": "Support",
+    "value": 405,
+    "region": "West"
+  },
+  {
+    "date": "2025-02-21",
+    "category": "Development",
+    "value": 391,
+    "region": "East"
+  },
+  {
+    "date": "2025-02-22",
+    "category": "Sales",
+    "value": 347,
+    "region": "North"
+  },
+  {
+    "date": "2025-02-23",
+    "category": "Support",
+    "value": 274,
+    "region": "East"
+  },
+  {
+    "date": "2025-02-24",
+    "category": "Marketing",
+    "value": 250,
+    "region": "East"
+  },
+  {
+    "date": "2025-02-25",
+    "category": "Development",
+    "value": 209,
+    "region": "East"
+  },
+  {
+    "date": "2025-02-26",
+    "category": "Sales",
+    "value": 458,
+    "region": "West"
+  },
+  {
+    "date": "2025-02-27",
+    "category": "Development",
+    "value": 460,
+    "region": "South"
+  },
+  {
+    "date": "2025-02-28",
+    "category": "Support",
+    "value": 358,
+    "region": "West"
+  },
+  {
+    "date": "2025-03-01",
+    "category": "Sales",
+    "value": 278,
+    "region": "East"
+  },
+  {
+    "date": "2025-03-02",
+    "category": "Sales",
+    "value": 108,
+    "region": "West"
+  },
+  {
+    "date": "2025-03-03",
+    "category": "Sales",
+    "value": 445,
+    "region": "North"
+  },
+  {
+    "date": "2025-03-04",
+    "category": "Support",
+    "value": 294,
+    "region": "East"
+  },
+  {
+    "date": "2025-03-05",
+    "category": "Marketing",
+    "value": 438,
+    "region": "North"
+  },
+  {
+    "date": "2025-03-06",
+    "category": "Marketing",
+    "value": 135,
+    "region": "East"
+  },
+  {
+    "date": "2025-03-07",
+    "category": "Marketing",
+    "value": 251,
+    "region": "West"
+  },
+  {
+    "date": "2025-03-08",
+    "category": "Support",
+    "value": 178,
+    "region": "South"
+  },
+  {
+    "date": "2025-03-09",
+    "category": "Development",
+    "value": 56,
+    "region": "North"
+  },
+  {
+    "date": "2025-03-10",
+    "category": "Support",
+    "value": 445,
+    "region": "West"
+  },
+  {
+    "date": "2025-03-11",
+    "category": "Sales",
+    "value": 440,
+    "region": "East"
+  },
+  {
+    "date": "2025-03-12",
+    "category": "Marketing",
+    "value": 420,
+    "region": "West"
+  },
+  {
+    "date": "2025-03-13",
+    "category": "Sales",
+    "value": 67,
+    "region": "East"
+  },
+  {
+    "date": "2025-03-14",
+    "category": "Marketing",
+    "value": 253,
+    "region": "South"
+  },
+  {
+    "date": "2025-03-15",
+    "category": "Sales",
+    "value": 249,
+    "region": "West"
+  },
+  {
+    "date": "2025-03-16",
+    "category": "Support",
+    "value": 188,
+    "region": "East"
+  },
+  {
+    "date": "2025-03-17",
+    "category": "Marketing",
+    "value": 445,
+    "region": "East"
+  },
+  {
+    "date": "2025-03-18",
+    "category": "Marketing",
+    "value": 439,
+    "region": "South"
+  },
+  {
+    "date": "2025-03-19",
+    "category": "Sales",
+    "value": 383,
+    "region": "South"
+  },
+  {
+    "date": "2025-03-20",
+    "category": "Support",
+    "value": 428,
+    "region": "West"
+  },
+  {
+    "date": "2025-03-21",
+    "category": "Marketing",
+    "value": 204,
+    "region": "North"
+  },
+  {
+    "date": "2025-03-22",
+    "category": "Marketing",
+    "value": 178,
+    "region": "West"
+  },
+  {
+    "date": "2025-03-23",
+    "category": "Marketing",
+    "value": 478,
+    "region": "West"
+  },
+  {
+    "date": "2025-03-24",
+    "category": "Development",
+    "value": 362,
+    "region": "South"
+  },
+  {
+    "date": "2025-03-25",
+    "category": "Development",
+    "value": 471,
+    "region": "West"
+  },
+  {
+    "date": "2025-03-26",
+    "category": "Marketing",
+    "value": 329,
+    "region": "North"
+  },
+  {
+    "date": "2025-03-27",
+    "category": "Sales",
+    "value": 309,
+    "region": "West"
+  },
+  {
+    "date": "2025-03-28",
+    "category": "Support",
+    "value": 267,
+    "region": "South"
+  },
+  {
+    "date": "2025-03-29",
+    "category": "Sales",
+    "value": 154,
+    "region": "North"
+  },
+  {
+    "date": "2025-03-30",
+    "category": "Marketing",
+    "value": 284,
+    "region": "South"
+  },
+  {
+    "date": "2025-03-31",
+    "category": "Support",
+    "value": 329,
+    "region": "East"
+  },
+  {
+    "date": "2025-04-01",
+    "category": "Marketing",
+    "value": 476,
+    "region": "North"
+  },
+  {
+    "date": "2025-04-02",
+    "category": "Marketing",
+    "value": 184,
+    "region": "South"
+  },
+  {
+    "date": "2025-04-03",
+    "category": "Sales",
+    "value": 61,
+    "region": "West"
+  },
+  {
+    "date": "2025-04-04",
+    "category": "Sales",
+    "value": 380,
+    "region": "North"
+  },
+  {
+    "date": "2025-04-05",
+    "category": "Marketing",
+    "value": 208,
+    "region": "North"
+  },
+  {
+    "date": "2025-04-06",
+    "category": "Development",
+    "value": 122,
+    "region": "South"
+  },
+  {
+    "date": "2025-04-07",
+    "category": "Marketing",
+    "value": 106,
+    "region": "East"
+  },
+  {
+    "date": "2025-04-08",
+    "category": "Support",
+    "value": 211,
+    "region": "West"
+  },
+  {
+    "date": "2025-04-09",
+    "category": "Support",
+    "value": 309,
+    "region": "West"
+  },
+  {
+    "date": "2025-04-10",
+    "category": "Sales",
+    "value": 252,
+    "region": "West"
+  }
+]

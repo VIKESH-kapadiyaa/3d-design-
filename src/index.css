@@ -91,6 +91,14 @@ body {
     filter: drop-shadow(0 0 6px rgba(255,255,255,0.7)); 
 }
 
+/* Scrollable legend with fade effect */
+#legend-container {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .legend-title {
     writing-mode: vertical-rl;
     transform: rotate(225deg);
@@ -163,6 +171,12 @@ body {
         display: flex;
         pointer-events: auto;
         margin: 0 auto;
+        padding: 8px 16px; /* Larger tap target */
+    }
+
+    /* Increase hitbox for data elements on mobile */
+    .cursor-pointer {
+        stroke-width: 15px !important;
     }
 }
 
